@@ -1,6 +1,5 @@
 import operator
 import os
-from pprint import pprint
 
 import matplotlib
 
@@ -18,16 +17,13 @@ import PyPDF2
 # If so, the command below resolves the backend.
 # Note that it MUST be run before any further imports.
 matplotlib.use('TkAgg')
-# You may now continue importing
 import matplotlib.pyplot as plt
 
-# Point to where the PDF you're reading from lives
+# Point to where the PDFs you're reading from live
 KW_FILES_DIR = 'files/'
 
 # You can define additional stopwords if needed.
 additional_stopwords = []
-
-
 
 def get_keyword_frequency():
     for kw_file in os.listdir(KW_FILES_DIR):
