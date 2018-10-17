@@ -1,2 +1,3 @@
 .DS_Store
-files/*
+files/*.txt
+files/*.pdf
