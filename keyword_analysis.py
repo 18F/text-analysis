@@ -46,7 +46,7 @@ def get_keyword_frequency():
             kw_text = kw_data.read()
         else:
             print("Unknown file type. Please use PDF or TXT files")
-            return
+            continue
 
         if kw_text == '':
             print(
